@@ -1,6 +1,6 @@
-# react-native-wheel-picker
-[![npm version](http://img.shields.io/npm/v/react-native-wheel-picker.svg?style=flat-square)](https://npmjs.org/package/react-native-wheel-picker "View this project on npm")
-[![npm version](http://img.shields.io/npm/dm/react-native-wheel-picker.svg?style=flat-square)](https://npmjs.org/package/react-native-wheel-picker "View this project on npm")
+# react-native-swheel-picker
+[![npm version](http://img.shields.io/npm/v/react-native-swheel-picker.svg?style=flat-square)](https://npmjs.org/package/react-native-swheel-picker "View this project on npm")
+[![npm version](http://img.shields.io/npm/dm/react-native-swheel-picker.svg?style=flat-square)](https://npmjs.org/package/react-native-swheel-picker "View this project on npm")
 
 ## Introduction
 Cross platform Picker component based on React-native.
@@ -8,8 +8,8 @@ Cross platform Picker component based on React-native.
 Since picker is originally supported by ios while Android only supports a ugly Spinner component. If you want to have the same user behaviour, you can use this.
 
 The android component is based on https://github.com/AigeStudio/WheelPicker which runs super fast and smoothly. It also supports curved effect which make it exactly the same looking and feel as the ios picker.
-![](https://raw.githubusercontent.com/lesliesam/react-native-wheel-picker/master/demo.gif)
-![](https://raw.githubusercontent.com/lesliesam/react-native-wheel-picker/master/demo_android.gif)
+![](https://raw.githubusercontent.com/lesliesam/react-native-swheel-picker/master/demo.gif)
+![](https://raw.githubusercontent.com/lesliesam/react-native-swheel-picker/master/demo_android.gif)
 
 ## How to use
 
@@ -17,20 +17,17 @@ Run command
 
 For apps using RN 0.40 or higher, please run
 ```
-npm i react-native-wheel-picker --save
+npm i react-native-swheel-picker --save
 ```
-For apps using RN 0.39 or less, please run
-```
-npm install --save --save-exact react-native-wheel-picker@1.1.2
-```
+
 Add in settings.gradle
 ```
-include ':react-native-wheel-picker'
-project(':react-native-wheel-picker').projectDir = new File(settingsDir, '../node_modules/react-native-wheel-picker/android')
+include ':react-native-swheel-picker'
+project(':react-native-swheel-picker').projectDir = new File(settingsDir, '../node_modules/react-native-swheel-picker/android')
 ```
 Add in app/build.gradle
 ```
-compile project(':react-native-wheel-picker')
+compile project(':react-native-swheel-picker')
 ```
 Modify MainApplication
 ```
@@ -55,7 +52,7 @@ import {
 } from 'react-native';
 
 
-import Picker from 'react-native-wheel-picker'
+import Picker from 'react-native-swheel-picker'
 var PickerItem = Picker.Item;
 
 export default class App extends Component<{}> {
